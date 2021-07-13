@@ -1,0 +1,129 @@
+/* -------------------------
+
+Fonts 
+
+----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------------
+
+        heading
+
+-----------------------------*/
+
+
+/*-------------------------
+
+
+Poster
+
+
+-------------------------*/
+
+
+.top-poster{
+    display: flex;
+    background-color:#2D25A0;
+}
+.posters{
+    margin: 156px 169px 159px 167px;
+}
+.posters h1{
+    width: 35px;
+    height: 20px;
+    color: #FFFFFF;
+    font-size: 64px;
+}
+.top-poster img{  
+    height: 438px;
+    width: 555px;
+    margin: 153px 140px 89px 102px;
+}
+.buttons {
+    color: white;
+    background-color: #E02C6D;
+    text-align: center;
+    width: 150px;
+    Height: 25px;
+    margin-top: 400px;
+    Padding: 10px 24px 10px 24px;
+}
+.buttons a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*------------------------- 
+
+    blog-secton
+
+-----------------------------*/
+
+
+.blogs{
+    margin-top: 70px;
+    width: 50%;
+    margin-bottom: 100px;
+}
+._blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.blog_details {
+    margin-left: 40px;
+    background: #fff;
+    padding: 11px;
+    box-shadow:  0px 0px 26px -10px gray;
+}
+  ._blog img {
+    width: 350px;
+    height: 256px;
+}
+.blog_details h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+.blog_details p {
+    color: #676767;
+    width: 350px;
+    text-align: justify;
+}
+
+
+/*-- ---------------------------------
+
+          footer-section 
+
+
+-------------------------------------*/
+
+
+.footer{
+    text-align: center;
+}
+.footer_col_2 i {
+    font-size: 30px;
+    color:#969BAB;
+    padding: 5px;
+    height: 32;
+    width: 32;
+  }
+
+
+
+
+
