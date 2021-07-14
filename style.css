@@ -36,30 +36,36 @@ Poster
     background-color:#2D25A0;
 }
 .posters{
-    margin: 156px 109px 159px 167px;
+    margin: 176px 50px 159px 182px;
 }
 .posters h1{
-    height: 20px;
+    heigh;
     color: #FFFFFF;
-    font-size: 64px;
+    font-size: 70px;
 }
 .top-poster img{  
     height: 438px;
     width: 555px;
-    margin: 153px 140px 89px 102px;
+    margin: 203px 70px 89px 0px;
 }
 .buttons {
     color: white;
     background-color: #E02C6D;
     text-align: center;
-    width: 150px;
+    width: 140px;
     Height: 25px;
-    margin-top: 400px;
-    Padding: 10px 24px 10px 24px;
+    margin-top: 27px;
+    Padding: 10px 24px;
+}
+.buttons i{
+    margin-left: 5px;
 }
 .buttons a{
     text-decoration: none;
     color: white;
+}
+.buttons :hover{
+    background-color: aqua;
 }
 
 
