@@ -1,26 +1,38 @@
-/* @Import google fonts */
+/* ---------------------
+@Import google fonts
+--------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
-
-/* CSS custom property or variables */
+/* --------------
+CSS custom
+--------------- */
 :root{
   --button-bg: #E02C6D;
   --text-color: #6C6C6C;
 }
+/* --------------
+CSS custom
+--------------- */
 
 
-/* default settings */
+/*----------------
+default settings 
+-----------------*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+/*----------------
+default settings 
+-----------------*/
 
 
-
-/* styles */
+/*----------
+ styles
+------------*/
 header, section,footer{
   display: flex;
   justify-content: center;
@@ -51,11 +63,14 @@ img{
 .styled-button:hover .fas{
   transform: translateX(20px);
 }
-/* ! common styles */
+/*----------
+ styles
+------------*/
 
 
-
-/* header area  */
+/* --------------
+header 
+----------------*/
 .header{
   background: #2D25A0;
   padding: 20px 0;
@@ -100,11 +115,15 @@ img{
   background: transparent;
   border-color: var(--button-bg);
 }
-/* ! header area design */
+/* --------------
+header 
+----------------*/
 
 
 
-/* hero seciton  */
+/*--------------- 
+hero seciton  
+----------------*/
 #hero{
   padding-bottom: 40px;
   background: #2D25A0;
@@ -127,10 +146,14 @@ img{
 #hero .hero-image img{
   position: relative;
 }
-/* ! hero seciton  */
+/*------------------ 
+hero seciton 
+------------------ */
 
 
-/* players section  */
+/*------------- 
+players section 
+-------------- */
 #players{
   padding: 40px 0;
 }
@@ -165,7 +188,9 @@ img{
   font-weight: normal;
   color: var(--text-color);
 }
-/* ! players section  */
+/* ------------
+ players section  
+--------------*/
 
 /*-------------------------------
 Contuct Us 
@@ -252,7 +277,11 @@ Contuct Us
   /*-------------
    contuct us
   -------------- */
-/* footer seciton */
+
+
+/*-------------- 
+footer seciton 
+----------------*/
 footer{
   padding: 50px 0 30px;
 }
@@ -290,14 +319,16 @@ footer p.copy-right{
   font-weight: 500;
   margin-top: 20px;
 }
-/* ! footer seciton */
+/*------------------- 
+footer seciton 
+--------------------*/
 
 
 
 
-/* ===========================================
+/* --------------------------------------
     Responsive
-==============================================*/
+----------------------------------------*/
 
 /* ---------------------------------------
   Mobile responsive
@@ -308,7 +339,7 @@ footer p.copy-right{
     padding: 0 10px;
   }
 
-  /* header responsive */
+  /* header section */
 
   .header .menu{
     display: none;
@@ -329,15 +360,12 @@ footer p.copy-right{
     font-size: 45px;
     margin-bottom: 20px;
   }
-  /* #hero .hero-image img:first-child{
-    height: 80px;
-  } */
   /* players section */
   #players .players-wrapper{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
-  /* contact us */
+  /* contact section */
   #reserve{
     display: none;
   }
