@@ -39,9 +39,8 @@ Poster
     margin: 176px 50px 159px 182px;
 }
 .posters h1{
-    heigh;
     color: #FFFFFF;
-    font-size: 70px;
+    font-size: 64px;
 }
 .top-poster img{  
     height: 438px;
@@ -50,22 +49,19 @@ Poster
 }
 .buttons {
     color: white;
-    background-color: #E02C6D;
     text-align: center;
-    width: 140px;
-    Height: 25px;
+    width: 130px;
+    Height: 30px;
     margin-top: 27px;
-    Padding: 10px 24px;
+    background-color: #E02C6D;
+    padding: 8px 10px;
 }
 .buttons i{
-    margin-left: 5px;
+    padding-left: 8px;
 }
 .buttons a{
     text-decoration: none;
     color: white;
-}
-.buttons :hover{
-    background-color: aqua;
 }
 
 
