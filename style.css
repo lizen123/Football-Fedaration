@@ -50,13 +50,19 @@ Poster
     margin: 203px 70px 89px 0px;
 }
 .buttons {
-    color: white;
     text-align: center;
     width: 130px;
+    background-color:#E02C6D ;
     Height: 30px;
     margin-top: 27px;
-    background-color: #E02C6D;
     padding: 8px 10px;
+}
+.buttons:hover{
+    transition: 400ms;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #a5965a;
 }
 .buttons i{
     padding-left: 8px;
@@ -65,9 +71,7 @@ Poster
     text-decoration: none;
     color: white;
 }
-.buttons:hover{
-    background-color: orange;
-}
+
 
 
 /*------------------------- 
@@ -96,13 +100,19 @@ Poster
   ._blog img {
     width: 350px;
     height: 256px;
+    transition: 400ms;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #eee;
+    color: #a5965a
 }
 .blog_details h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 900;
     font-size: 28px;
 }
-.blog_details p {
+.blog_details p{
     color: #676767;
     width: 350px;
     text-align: justify;
@@ -118,64 +128,88 @@ Contuct Us
 
 --------------------------------*/
 
-.contact{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #2962ff ;
+
+#reserve{
+    background: url(images/banner.jpg) center;
     background-size: cover;
-}
-.contact .content{
-    max-width: 700px;
+    margin: 40px 0;
+    padding: 70px 0;
+  }
+  #reserve .flexing{
+      display: flex;
+    align-items: center;
+  }
+  #reserve .reserve-detail{
+    width: 40%;
+    padding: 40px;
+    background: darkgray;
     text-align: center;
-}
-.contact .content h1{
-    font-size: 36px;
-    font-weight: 500;
+  }
+  #reserve .box .mini-title{
+    font-size: 14px;
+    font-style: italic;
     color: #fff;
-}
-.container .contactinfo .box .icon{
-    min-width:40px;
-    height: 40px;
+    text-align: center;
+  }
+  #reserve .box h3{
     font-size: 30px;
-    background: olive;
-}
-.container .contactinfo .box .text{
-    display: flex;
-    margin-left: 10px;
-    font-size: 20px;
     color: #fff;
-    flex-direction: column;
-}
-.container .contactinfo .box .text h3{
-    color: #00bcd4;
-}
-.contactform{
-    padding: 70px;
-}
-.contactform h2{
-    font-size: 40px;
-    color: rgb(87, 7, 7);
-}
-.contactform .inputbox{
-    postion: relative;
-    margin-top: 20px;
-}
-.button {
-    font-size: 40px;
-}
-.button:hover{
-    background-color: orange;
-    font-size: 40px;
-}
-.contactform .inputbox input, .contactform .inputbox textarea{
+    text-align: center;
+    margin: 15px 0 20px;
+  }
+  #reserve .box h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 25px 0 10px;
+  }
+  #reserve .box p{
+    font-size: 13px;
+    color: #fff;
+    line-height: 23px;
+  }
+  #reserve .box .contact{
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  #reserve .reserve-form{
+    width: 60%;
+    padding: 40px;
+  }
+  #reserve .reserve-form .flexing{
+    margin: 30px 0;
+  }
+  #reserve .reserve-form .form-half{
+    width: 46%;
+  }
+  #reserve .reserve-form .form-3{
+    width: 30%;
+  }
+  
+  .reserve-form input{
+    outline: none;
+    border: 1px solid #fff9e1;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background: paleturquoise;
+    color: #fff;
+    font-size: 13px;
     width: 100%;
-    padding: 5px 0;
-    margin: 10px 0;
-    resize: none;
-}
+  }
+  .reserve-form .submit{
+    transition: 400ms;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #eee;
+    color: #a5965a;
+  }
+  .reserve-form .submit:hover{
+    background: transparent;
+    color: #fff;
+  }
+
+
 
 
 /*-- ---------------------------------
@@ -189,14 +223,77 @@ Contuct Us
 .footer{
     text-align: center;
 }
+.footer_col_1 img{
+    width: 400px;
+    height: 100px;
+    margin-bottom: 53px;
+}
 .footer_col_2 i {
     font-size: 30px;
     color:#969BAB;
-    padding: 5px;
+    padding: 10px;
     height: 32px;
     width: 32px;
   }
   .footer_col_2 i:hover{
-      color: blueviolet;
+    color:darkslategrey ;
+    transition: 400ms;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #eee;
   }
 
+
+
+
+
+
+
+
+  /* ------------------------------------
+
+
+  Mobile responsive
+
+
+--------------------------------------- */
+ @media (max-width: 576px) { 
+    .container{
+      width: 95%;
+      padding: 0 10px;
+    }
+    /* hero section */
+    #hero .hero-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 70px 0 50px;
+      width: 100%;
+    }
+    #hero .hero-details h2{
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+  
+    /* players section */
+    #players .players-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+  
+  
+    /* Latest News sention */
+    #latest-news .news-wrapper{
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    #latest-news .news-1,
+    #latest-news .news-3{
+      flex-direction: column;
+    }
+    #latest-news .news-1 .news-img img,
+    #latest-news .news-3 .news-img img{
+      border-radius: 0;
+      width: 100%;
+    }
+  
+  } */
