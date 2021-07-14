@@ -65,6 +65,9 @@ Poster
     text-decoration: none;
     color: white;
 }
+.buttons:hover{
+    background-color: orange;
+}
 
 
 /*------------------------- 
@@ -108,21 +111,24 @@ Poster
 
 
 
+/*-------------------------------
 
+
+Contuct Us 
+
+--------------------------------*/
 
 .contact{
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image:url(images/back.jpg) ;
+    background-color: #2962ff ;
     background-size: cover;
 }
 .contact .content{
-    max-width: 800px;
+    max-width: 700px;
     text-align: center;
 }
 .contact .content h1{
@@ -133,13 +139,6 @@ Poster
 .contact .content P{
     font-weight: 300;
     color: #fff;
-}
-.container{
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
 }
 .conatainer .contactinfo{
     width: 50%;
@@ -172,7 +171,6 @@ Poster
 .contactform{
     width: 50%;
     padding: 70px;
-    background: #333;
 }
 .contactform h2{
     font-size: 40px;
@@ -183,23 +181,19 @@ Poster
     width: 100%;
     margin-top: 30px;
 }
+.button:hover{
+    background-color: orange;
+    font-size: 40px;
+}
+.button {
+    font-size: 40px;
+}
 .contactform .inputbox input, .contactform .inputbox textarea{
     width: 100%;
     padding: 5px 0;
     margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outine: none;
     resize: none;
 }
-
-
-
-
-
-
-
-
 
 
 /*-- ---------------------------------
