@@ -329,14 +329,17 @@ footer p.copy-right{
     font-size: 45px;
     margin-bottom: 20px;
   }
-  #hero .hero-image img:first-child{
+  /* #hero .hero-image img:first-child{
     height: 80px;
-  }
-
+  } */
   /* players section */
   #players .players-wrapper{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }
+  /* contact us */
+  #reserve{
+    display: none;
   }
 }
 /*----------------------------------------- 
