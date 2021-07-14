@@ -1,134 +1,175 @@
-/* -------------------------
-
-Fonts 
-
-----------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
 
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+/* CSS custom property or variables */
+:root{
+  --button-bg: #E02C6D;
+  --text-color: #6C6C6C;
 }
 
-/* --------------------------
 
-        heading
-
------------------------------*/
-
-
-
-/*-------------------------
-
-
-Poster
-
-
--------------------------*/
-
-
-.top-poster{
-    display: flex;
-    background-color:#2D25A0;
-}
-.posters{
-    margin: 176px 50px 159px 182px;
-}
-.posters h1{
-    color: #FFFFFF;
-    font-size: 64px;
-}
-.top-poster img{  
-    height: 438px;
-    width: 555px;
-    margin: 203px 70px 89px 0px;
-}
-.buttons {
-    text-align: center;
-    width: 130px;
-    background-color:#E02C6D ;
-    Height: 30px;
-    margin-top: 27px;
-    padding: 8px 10px;
-}
-.buttons:hover{
-    transition: 400ms;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    background: #a5965a;
-}
-.buttons i{
-    padding-left: 8px;
-}
-.buttons a{
-    text-decoration: none;
-    color: white;
+/* default settings */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
-/*------------------------- 
-
-    blog-secton
-
------------------------------*/
-
-
-.blogs{
-    margin-top: 70px;
-    width: 0;
-    margin-bottom: 100px;
+/* styles */
+header, section,footer{
+  display: flex;
+  justify-content: center;
 }
-._blog{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 27px;
+.container{
+  width: 1050px;
 }
-.blog_details {
-    margin-left: 55px;
-    background: #fff;
-    padding: 11px;
-    box-shadow:  0px 0px 26px -10px gray;
+a{
+  text-decoration: none;
 }
-  ._blog img {
-    width: 350px;
-    height: 256px;
-    transition: 400ms;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    background: #eee;
-    color: #a5965a
+img{
+  max-width: 100%;
 }
-.blog_details h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 900;
-    font-size: 28px;
+.styled-button{
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--button-bg);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 400ms;
+  padding-right: 40px;
 }
-.blog_details p{
-    color: #676767;
-    width: 350px;
-    text-align: justify;
+.styled-button .fas{
+  transform: translateX(5px);
+  transition: all 400ms;
 }
+.styled-button:hover .fas{
+  transform: translateX(20px);
+}
+/* ! common styles */
 
 
 
+/* header area  */
+.header{
+  background: #2D25A0;
+  padding: 20px 0;
+}
+.header #toggle{
+  display: none;
+}
+.header .navigation-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu{
+  display: flex;
+  align-items: center;
+}
+.header .menu li{
+  list-style-type: none;
+}
+.header .menu li a{
+  color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+  font-weight: 500;
+  transition: color 400ms;
+}
+.header .menu li a:hover{
+  color: var(--button-bg);
+}
+.header .login a{
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--button-bg);
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all 400ms;
+}
+.header .login a .fas{
+  margin-right: 6px;
+}
+.header .login a:hover{
+  background: transparent;
+  border-color: var(--button-bg);
+}
+/* ! header area design */
+
+
+
+/* hero seciton  */
+#hero{
+  padding-bottom: 40px;
+  background: #2D25A0;
+}
+#hero .hero-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  align-items: center;
+}
+#hero .hero-details h2{
+  font-size: 64px;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+#hero .hero-image{
+  position: relative;
+}
+#hero .hero-image img{
+  position: relative;
+}
+/* ! hero seciton  */
+
+
+/* players section  */
+#players{
+  padding: 40px 0;
+}
+#players .players-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#players .single-player{
+  box-shadow: #11111a0d 0px 4px 16px, #11111a0d 0px 8px 32px;
+  padding: 15px;
+}
+#players .single-player .player-img{
+  overflow: hidden;
+}
+#players .single-player .player-img img{
+  transition: transform 700ms;
+}
+#players .single-player:hover .player-img img{
+  transform: scale(1.4) rotate(2deg);
+}
+#players .single-player .player-info{
+  padding: 15px 0 20px;
+}
+#players .single-player .player-info .player-name{
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+#players .single-player .player-info .player-desc{
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+/* ! players section  */
 
 /*-------------------------------
-
-
 Contuct Us 
-
 --------------------------------*/
-
-
 #reserve{
     background: url(images/banner.jpg) center;
     background-size: cover;
@@ -168,7 +209,7 @@ Contuct Us
     color: #fff;
     line-height: 23px;
   }
-  #reserve .box .contact{
+  #reserve .contact{
     font-weight: 600;
     margin-top: 40px;
   }
@@ -208,80 +249,103 @@ Contuct Us
     background: transparent;
     color: #fff;
   }
-
-
-
-
-/*-- ---------------------------------
-
-          footer-section 
-
-
--------------------------------------*/
-
-
-.footer{
-    text-align: center;
+  /*-------------
+   contuct us
+  -------------- */
+/* footer seciton */
+footer{
+  padding: 50px 0 30px;
 }
-.footer_col_1 img{
-    width: 400px;
-    height: 100px;
-    margin-bottom: 53px;
+footer .footer-logo{
+  text-align: center;
 }
-.footer_col_2 i {
-    font-size: 30px;
-    color:#969BAB;
-    padding: 10px;
-    height: 32px;
-    width: 32px;
-  }
-  .footer_col_2 i:hover{
-    color:darkslategrey ;
-    transition: 400ms;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    background: #eee;
-  }
+footer .footer-logo img{
+  height: 100px;
+  width: auto;
+}
+footer .social-icons{
+  text-align: center;
+  margin: 10px 0;
+}
+footer .social-icons a{
+  color: #111;
+  padding: 10px;
+  background: #ddd;
+  font-size: 20px;
+  display: inline-block;
+  width: 50px;
+  border-radius: 50%;
+  transition: all .4s;
+}
+footer .social-icons a:not(:last-child){
+  margin-right: 7px;
+}
+footer .social-icons a:hover{
+  background: var(--button-bg);
+  color: #fff;
+}
+footer p.copy-right{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+/* ! footer seciton */
 
 
 
 
+/* ===========================================
+    Responsive
+==============================================*/
 
-
-
-
-  /* ------------------------------------
-
-
+/* ---------------------------------------
   Mobile responsive
-
-
 --------------------------------------- */
- @media (max-width: 576px) { 
-    .main{
-      width: 1300px;
-      padding: 0 10px;
-    }
-    /* blogs-section */
-    .blogs ._blog{
-      grid-template-columns: repeat(1, 1fr);
-      padding: 40px 0px 50px;
-      margin-left: 40px;
-      width: 1000px;
-    }
-    .blogs ._blog h2{
-      font-size: 75px;
-      margin-bottom: 20px;
-      text-align: center
-    }
-    .blog_details {
-     text-align: center;
-    }
-    .blog_details p{
-        font-size: 40px;
-        padding-left: 300px;
-    }
-    #reserve{
-        
-    }
+@media (max-width: 576px) { 
+  .container{
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  /* header responsive */
+
+  .header .menu{
+    display: none;
+  }
+  .header #toggle{
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  /* hero section */
+  #hero .hero-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 70px 0 50px;
+    width: 100%;
+  }
+  #hero .hero-details h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  #hero .hero-image img:first-child{
+    height: 80px;
+  }
+
+  /* players section */
+  #players .players-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+/*----------------------------------------- 
+Tab responsive
+------------------------------------------*/
+@media only screen and (min-width:577px) and (max-width: 768px) {
+  .container{
+    width: 95%;
+    padding: 0 10px;
+  }
+
+}
