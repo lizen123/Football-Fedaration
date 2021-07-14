@@ -259,41 +259,29 @@ Contuct Us
 
 --------------------------------------- */
  @media (max-width: 576px) { 
-    .container{
-      width: 95%;
+    .main{
+      width: 1300px;
       padding: 0 10px;
     }
-    /* hero section */
-    #hero .hero-wrapper{
+    /* blogs-section */
+    .blogs ._blog{
       grid-template-columns: repeat(1, 1fr);
-      padding: 70px 0 50px;
-      width: 100%;
+      padding: 40px 0px 50px;
+      margin-left: 40px;
+      width: 1000px;
     }
-    #hero .hero-details h2{
-      font-size: 45px;
+    .blogs ._blog h2{
+      font-size: 75px;
       margin-bottom: 20px;
+      text-align: center
     }
-  
-    /* players section */
-    #players .players-wrapper{
-      grid-template-columns: repeat(1, 1fr);
-      width: 100%;
+    .blog_details {
+     text-align: center;
     }
-  
-  
-    /* Latest News sention */
-    #latest-news .news-wrapper{
-      grid-template-columns: 1fr;
-      width: 100%;
+    .blog_details p{
+        font-size: 40px;
+        padding-left: 300px;
     }
-    #latest-news .news-1,
-    #latest-news .news-3{
-      flex-direction: column;
+    #reserve{
+        
     }
-    #latest-news .news-1 .news-img img,
-    #latest-news .news-3 .news-img img{
-      border-radius: 0;
-      width: 100%;
-    }
-  
-  } */
