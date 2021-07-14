@@ -355,6 +355,9 @@ footer seciton
     padding: 70px 0 50px;
     width: 100%;
   }
+  .hero-image{
+    margin-top: 95px;
+  }
   #hero .hero-details h2{
     font-size: 45px;
     margin-bottom: 20px;
